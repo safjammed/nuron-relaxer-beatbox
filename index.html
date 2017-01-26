@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neuron Relaxer</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/lib/paper-full.min.js"></script>
+	<script type="text/javascript" src="assets/js/lib/howler.min.js"></script>
+	<script type="text/paperscript" src="assets/js/custom.js" canvas="myCanvas"></script>
+</head>
+<body>
+<div class="content" onclick="hide()" style="height: 100%">
+<script type="text/javascript">
+	function hide() {
+		var msg = document.getElementById("msg");
+		if(msg.style.visibility != 'hidden' ){
+		msg.style.visibility='hidden';
+	}else{
+		msg.style.visibility='visible';
+	}
+	}
+</script>
+<canvas id="myCanvas" ></canvas>
+
+<div id="hint" style="display: block;">
+      <p class="message" id="msg">Neuron Relaxer Beatbox v.1.01<br>Make something beautiful! :)<br>Press any key, A to Z, 0 to 9 or spacebar, and turn up speakers <br> Click F11 and Click anywhere to hide hints</p>
+
+</div>
+</div>
+</body>
+</html>
