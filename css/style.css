@@ -1,0 +1,63 @@
+canvas{
+	width: 100%;
+	height: 100%;
+}
+body, html{
+	height: 100%;
+	margin: 0;
+	color: #000;
+    background: rgb(39, 6, 54);
+    -webkit-animation: hue 120s infinite linear;
+    overflow: hidden;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+
+#waveform {
+	position: absolute;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: -15% auto;
+  display: none;
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-user-select: none;
+  user-select: none;
+}
+#waveform:hover {
+  opacity: 1;
+}
+#hint {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15%;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+#hint .message {
+    display: inline-block;
+    background: white;
+    color: #666666;
+    font-family: "Lucida Grande", verdana, sans-serif;
+    font-size: 12px;
+    line-height: 32px;
+    border-radius: 10.56px;
+    padding: 0 16px;
+}
