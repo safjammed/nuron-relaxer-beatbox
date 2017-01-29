@@ -268,6 +268,10 @@ function onFrame(event){
 		circles[i].fillColor.hue+=1;
 		//scales the circle to null
 		circles[i].scale(.9);
+		//clearing the ram 
+		if(circles[i].radius <1){
+			circles.splice(i,1);
+		}
 	}
 	
 }
